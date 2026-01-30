@@ -1,0 +1,143 @@
+/* Section3.css */
+
+.blue-wrapper {
+  background-color: #3baee3; /* Ko'k fon */
+  padding: 60px 0;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+.container-s3 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-title {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.red-text {
+  color: #ff4d4d;
+  font-weight: bold;
+}
+
+/* 4 ta ustunli Grid */
+.grid-s3 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Oq kartochka stili */
+.white-card {
+  background: white;
+  padding: 20px;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 180px;
+}
+
+.white-card h3 {
+  font-size: 16px;
+  color: #333;
+  margin: 0 0 10px 0;
+}
+
+.white-card p {
+  font-size: 13px;
+  color: #777;
+  line-height: 1.4;
+}
+
+.price {
+  color: #e63946;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Rasmli kartochkalar */
+.promo-card {
+  background-size: cover;
+  background-position: center;
+  border-radius: 2px;
+  min-height: 200px;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+.promo-overlay {
+  background: rgba(0, 0, 0, 0.4); /* Rasm ustidagi qorong'ulik */
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  background: #ff0000b8 ;
+
+}
+.promo-overlay2 {
+  background: rgba(0, 0, 0, 0.4); /* Rasm ustidagi qorong'ulik */
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+
+}
+.promo-overlay3 {
+  background: rgba(0, 0, 0, 0.4); /* Rasm ustidagi qorong'ulik */
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  background: blue;
+  background-image: url("../assets/back2.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.free {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.promo-overlay{
+    background-image: url("../assets/ok.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.promo-overlay2 {
+    background-image: url("../assets/ikki.png");
+}
+
+
+
+
+/* Rasmlar (Public papkasida bo'lishi kerak) */
+.master { background-image: url('/master.jpg'); }
+.diag { background-image: url('/diag.jpg'); }
+.shield { background-image: url('/shield.jpg'); }
+
+/* MEDIA - Mobil versiya */
+@media (max-width: 900px) {
+  .grid-s3 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .grid-s3 { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,80 @@
+.header-container {
+  width: 100%;
+  padding: 15px 0;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo-icon-wrapper {
+  color: #0096da;
+  padding: 5px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.blue-text {
+  color: #0096da;
+}
+
+.info-text {
+  font-size: 14px;
+  color: #333;
+}
+
+.city-select {
+  color: #0096da;
+  border-bottom: 1px dashed #0096da;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.label {
+  color: #888;
+  font-size: 12px;
+}
+
+.time, .phone-number {
+  font-weight: bold;
+  color: #444;
+}
+
+.callback-btn {
+  background-color: #0096da;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.callback-btn:hover {
+  background-color: #007bb3;
+}
+
+/* Responsivlik uchun (Mobil variantda qulay bo'lishi uchun) */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
