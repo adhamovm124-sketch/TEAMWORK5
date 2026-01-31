@@ -1,0 +1,96 @@
+.Section7{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.Section7 h1{
+    text-align: center;
+}
+.namecon{
+    display: flex;
+    padding-top: 120px;
+    justify-content: center ;
+    gap: 20px;
+}
+.namecon .person1{
+    width: 400px;
+    height: 280px;
+    border: 1px solid #3CA7DB;
+    padding: 30px;
+}
+.person1 img{
+    position: relative;    
+    margin-top: -100px;
+    margin-left: 120px;
+}
+.person1 h3{
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0%;
+}
+.person1 p{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    color: #AFAFAF;
+}
+
+@media (max-width: 768px) {
+    .Section7 {
+        padding-top: 60px;
+    }
+
+    .namecon {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 80px;
+        gap: 80px; 
+    }
+
+    .namecon .person1 {
+        width: 100%;
+        max-width: 450px;
+        height: auto; 
+        padding: 40px 30px 30px 30px;
+    }
+
+    .person1 img {
+        display: block;
+        margin: -90px auto 20px auto; 
+        position: relative;
+        left: 0;
+    }
+
+    .person1 h3 {
+        text-align: center;
+    }
+
+    .person1 p {
+        text-align: center;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Section7 h1 {
+        font-size: 26px;
+    }
+
+    .namecon {
+        padding-top: 70px;
+        gap: 70px;
+    }
+
+    .namecon .person1 {
+        max-width: 320px;
+        padding: 30px 20px 20px 20px;
+    }
+
+    .person1 p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
